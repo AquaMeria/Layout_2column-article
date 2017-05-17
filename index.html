@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2カラムレイアウト(記事型)</title>
+  <title>横型レイアウト</title>
   <!-- CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="framework/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href="css/common.css" rel="stylesheet">
   <link href="css/module.css" rel="stylesheet">
@@ -17,295 +17,71 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
- 
+
 <body>
 
-    <!-- グローバルナビゲーション -->
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">サイトタイトル</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">MENU01</a>
-                    </li>
-                    <li>
-                        <a href="#">MENU02</a>
-                    </li>
-                    <li>
-                        <a href="#">MENU03</a>
-                    </li>
-                    <li>
-                        <a href="#">MENU04</a>
-                    </li>
-                    <li>
-                        <a href="#">MENU05</a>
-                    </li>
-                    <li>
-                        <a href="#">MENU06</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-    <!-- /グローバルナビゲーション -->
-    
-    <!-- コンテンツ -->
-    <div class="container">
-        <div class="row">
-            <section class="content">
-                <div class="col-md-8 col-sm-12">
-                    <div class="content__main"></div>
-                </div>
-            </section>
-            
-            <!-- サイドメニュー -->       
-            <section class="sidemenu">
-                <div class="col-md-4 col-sm-12">
-                   <div class="well sidemenu__block">
-                        <aside class="sidemenu__block__widget">
-                            <h3 class="sidemenu__block__widget__title">スポンサー</h3>
-                            <img src="http://placehold.it/300x250" alt="広告">
-                        </aside>
-                    </div>
+    <div id="wrapper">
 
-                    <div class="well sidemenu__block">
-                        <aside class="sidemenu__block__widget">
-                            <h3 class="sidemenu__block__widget__title">Popular Posts</h3>
-                            <!-- post -->
-                            <div class="sidemenu__block__widget__post">
-                                <!-- image -->
-                                <div class="sidemenu__block__widget__post__left">
-                                    <a href="#"><img src="http://placehold.it/60x60" class="sidemenu__block__widget__post__left__img">
-                                    </a>
-                                </div>
-                                <!-- content -->
-                                <div class="sidemenu__block__widget__post__right">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text">How to Use WordPress Pingbacks And Trackbacks</a>
-                                    <span class="sidemenu__block__widget__post__right__date">07 Apr , 2015</span>
-                                </div><!-- end content -->
-                            </div>
-                            <!-- end post -->
-                            <!-- post -->
-                            <div class="sidemenu__block__widget__post">
-                                <!-- image -->
-                                <div class="sidemenu__block__widget__post__left">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text"><img src="http://placehold.it/60x60" class="sidemenu__block__widget__post__left__img">
-                                    </a>
-                                </div>
-                                <!-- content -->
-                                <div class="sidemenu__block__widget__post__right">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text">How to Use WordPress Pingbacks And Trackbacks</a>
-                                    <span class="sidemenu__block__widget__post__right__date">07 Apr , 2015</span>
-                                </div><!-- end content -->
-                            </div>
-                            <!-- end post -->
-                            <!-- post -->
-                            <div class="sidemenu__block__widget__post">
-                                <!-- image -->
-                                <div class="sidemenu__block__widget__post__left">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text"><img src="http://placehold.it/60x60" class="sidemenu__block__widget__post__left__img">
-                                    </a>
-                                </div>
-                                <!-- content -->
-                                <div class="sidemenu__block__widget__post__right">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text">How to Use WordPress Pingbacks And Trackbacks</a>
-                                    <span class="sidemenu__block__widget__post__right__date">07 Apr , 2015</span>
-                                </div><!-- end content -->
-                            </div>
-                            <!-- end post -->
-                            <!-- post -->
-                            <div class="sidemenu__block__widget__post">
-                                <!-- image -->
-                                <div class="sidemenu__block__widget__post__left">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text"><img src="http://placehold.it/60x60" class="sidemenu__block__widget__post__left__img">
-                                    </a>
-                                </div>
-                                <!-- content -->
-                                <div class="sidemenu__block__widget__post__right">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text">How to Use WordPress Pingbacks And Trackbacks</a>
-                                    <span class="sidemenu__block__widget__post__right__date">07 Apr , 2015</span>
-                                </div><!-- end content -->
-                            </div>
-                            <!-- end post -->                        
-                            <!-- post -->
-                            <div class="sidemenu__block__widget__post">
-                                <!-- image -->
-                                <div class="sidemenu__block__widget__post__left">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text"><img src="http://placehold.it/60x60" class="sidemenu__block__widget__post__left__img">
-                                    </a>
-                                </div>
-                                <!-- content -->
-                                <div class="sidemenu__block__widget__post__right">
-                                    <a href="#" class="sidemenu__block__widget__post__right__text">How to Use WordPress Pingbacks And Trackbacks</a>
-                                    <span class="sidemenu__block__widget__post__right__date">07 Apr , 2015</span>
-                                </div><!-- end content -->
-                            </div>
-                            <!-- end post -->
-                        </aside>
-                    </div>
+        <!-- グローバルナビゲーション -->
+        <section class="sidebar">
+            <ul class="sidebar__nav">
+                <li class="sidebar__nav__brand">
+                    <a href="#">サイトタイトル</a>
+                </li>
+                <li>
+                    <a href="#">menu01</a>
+                </li>
+                <li>
+                    <a href="#">menu02</a>
+                </li>
+                <li>
+                    <a href="#">menu03</a>
+                </li>
+                <li>
+                    <a href="#">menu04</a>
+                </li>
+                <li>
+                    <a href="#">menu05</a>
+                </li>
+                <li>
+                    <a href="#">menu06</a>
+                </li>
+                <li>
+                    <a href="#">menu07</a>
+                </li>
+            </ul>
+        </section>
+        <!-- /グローバルナビゲーション -->
 
-                    <div class="well sidemenu__block">
-                        <aside class="sidemenu__block__widget">
-                            <form role="search" method="get" action="#">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="キーワードを入力" value="" name="s">
-                                    <span class="input-group-btn">
-                                        <button type="submit" class="btn btn-default" name="submit" value="Search"><span class="glyphicon glyphicon-search"></span>
-                                        </button>
-                                    </span>
-                                </div>
-                            </form>
-                        </aside>
-                    </div>
-
-                    <div class="well sidemenu__block">
-                        <aside class="sidemenu__block__widget">
-                            <h3 class="sidemenu__block__widget__title">Categories</h3>
-                            <ul class="sidemenu__block__widget__category">
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Post Formats</a> <span class="sidemenu__block__widget__category__list__postCount">16</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Uncategorized</a> <span class="sidemenu__block__widget__category__list__postCount">10</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Template</a> <span class="sidemenu__block__widget__category__list__postCount">10</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Edge Case</a> <span class="sidemenu__block__widget__category__list__postCount">6</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Markup</a> <span class="sidemenu__block__widget__category__list__postCount">6</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Slider</a> <span class="sidemenu__block__widget__category__list__postCount">3</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Media</a> <span class="sidemenu__block__widget__category__list__postCount">2</span>
-                                </li>
-                                <li class="sidemenu__block__widget__category__list"><a href="#" class="sidemenu__block__widget__category__list__link">Featured</a> <span class="sidemenu__block__widget__category__list__postCount">2</span>
-                                </li>
-                            </ul>
-                        </aside>
-                    </div>
-
-                    <div class="well sidemenu__block">
-                        <aside class="sidemenu__block__widget">
-                            <h3 class="sidemenu__block__widget__title">Tags</h3>
-                            <div class="sidemenu__block__widget__tagcloud">
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>8BIT</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>alignment</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Articles</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>aside</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>audio</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>captions</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>categories</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>chat</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Codex</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>comments</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>content</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>css</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>dowork</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>content</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>edge case</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>embeds</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>excerpt</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Fail</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>featured image</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>formatting</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>FTW</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Fun</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>gallery</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>html</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>image</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>jetpack</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>layout</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>link</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>lists</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Love</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>markup</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>media</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Mothership</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Must Read</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Nailed It</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>pagination</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>Post Formats</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>quote</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>shortcode</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>standard</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>template</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>title</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>twitter</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>video</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>videopress</a>
-                                <a href='#' class='sidemenu__block__widget__tagcloud__link'>wordpress.tv</a>
-                            </div>
-                        </aside>		
-                    </div>
-                </div>    
-            </section>
-            <!-- /サイドメニュー -->
-        
-        </div>
-    </div>
-    <!-- /コンテンツ -->
-    
-    <!-- フッター -->
-    <footer>
-        <div id="footer" class="footer">
-            <div class="container">
+        <!-- コンテンツ -->
+        <section class="content">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                        <h3 class="footer__subtitle">About サイトタイトル</h3>
-                        <p class="footer__content">サイトの説明</p>
-                    </div>
-                    <div class="col-md-4 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                        <h3 class="footer__subtitle">MENU</h3>
-                        <ul class="footer__content footer__content--category">
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU01</a></li>
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU02</a></li>
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU03</a></li>
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU04</a></li>
-                        </ul>
-                        <ul class="footer__content footer__content--category">
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU05</a></li>
-                            <li class="footer__content--category__list"><a href="#" class="footer__content--category__list__link">MENU06</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="col-md-2 col-md-push-1 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-                        <h3 class="footer__subtitle">Follow Us</h3>
-                        <ul class="footer__content footer__content--social">
-                            <li class="footer__content--social__list"><a href="#" class="footer__content--social__list__link"><i class=".footer__content--social__list__link__icon fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                            <li class="footer__content--social__list"><a href="#" class="footer__content--social__list__link"><i class=".footer__content--social__list__link__icon fa fa-facebook-official" aria-hidden="true"></i> Facebook</a></li>
-                            <li class="footer__content--social__list"><a href="#" class="footer__content--social__list__link"><i class=".footer__content--social__list__link__icon fa fa-google-plus" aria-hidden="true"></i> Google Plus</a></li>
-                            <li class="footer__content--social__list"><a href="#" class="footer__content--social__list__link"><i class=".footer__content--social__list__link__icon fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-                        </ul>
+                    <div class="col-lg-12">
+                        <a class="visible-xs visible-sm" id="sidebar--menu">
+                            <i class="fa fa-bars menu--icon" aria-hidden="true"></i>
+                        </a>
+                        <h1>header</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="text-center footer__copyright">
-                <p>&copy; 2017 <span class="footer__copyright__brand">サイトタイトル</span>. All Rights Reserved. </p>
-            </div>
-        </div>
-    </footer>
-    <!-- /フッター -->
- 
+        </section>
+        <!-- /コンテンツ -->
+
+    </div>
+    <!-- /wrapper -->
+
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="framework/bootstrap.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/module.js"></script>
-    <script src="js/pagename.js"></script>
+    <script src="js/pagename.js"></script>    
     <!-- JS -->
 
 </body>
+
 </html>
